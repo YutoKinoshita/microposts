@@ -16,4 +16,5 @@ class User < ActiveRecord::Base
   validates :profile, absence: true, on: :create
   validates :profile, length: { in: 0..140 },
                                  allow_blank: true, on: :update
+has_many :microposts
 end
