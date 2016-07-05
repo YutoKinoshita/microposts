@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
     following_relationship.destroy if following_relationship
   end
 
-  # あるユーザーをフォローしているかどうか？
+  # あるユーザーをフォローしているかどうか
   def following?(other_user)
     following_users.include?(other_user)
   end
