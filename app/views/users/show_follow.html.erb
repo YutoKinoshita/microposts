@@ -4,8 +4,10 @@
   </aside>
   <div class="col-md-8">
     <h3><%= @title %> (<%= @users.count %>)</h3>
+    <%= paginate @users %>
     <div class="follows">
       <ul><%= render @users %></ul>
+      <%= paginate @users %>
     </div>
   </div>
 </div>
